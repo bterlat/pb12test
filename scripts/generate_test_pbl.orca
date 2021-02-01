@@ -1,0 +1,9 @@
+start session
+set debug true
+scc set connect property logfile "createpbls.log"
+scc set connect property localprojpath "."
+scc connect offline
+scc set target "pbtutor.pbt" refresh_all importonly
+scc refresh target incremental
+scc close
+end session
